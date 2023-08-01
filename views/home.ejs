@@ -1,0 +1,17 @@
+
+<%- include("partials/header"); -%>
+    <h2>Welcome to Shubham Shinde's Blog: Where Technology Meets Words</h2>
+    <p><%= startingContent %></p>
+   <% console.log(allBlogs.length) %>
+
+   <% allBlogs.forEach(function(blog){%>
+    <h3><b><%= blog.title %></b></h3>
+    <p>
+      <%= blog.body.substring(0,100) +"..."%>
+      <a href="/posts/<%=blog._id%>">Read More</a>
+    </p>
+   <%})%>
+
+
+
+<%- include("partials/footer"); -%>
