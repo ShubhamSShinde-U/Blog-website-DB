@@ -20,7 +20,7 @@ app.use(express.static("public"));
 
 const mongoose = require("mongoose");
 
-mongoose.connect("mongodb + srv://admin-shubham:Shubham123@cluster0.tlw48o2.mongodb.net/BlogDB");
+mongoose.connect("mongodb+srv://admin-shubham:Shubham123@cluster0.tlw48o2.mongodb.net/BlogDB");
 
 //creating schema of document
 const blogSchema = new mongoose.Schema({
