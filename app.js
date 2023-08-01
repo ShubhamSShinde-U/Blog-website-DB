@@ -20,7 +20,7 @@ app.use(express.static("public"));
 
 const mongoose = require("mongoose");
 
-mongoose.connect("mongodb://127.0.0.1:27017/BlogDB");
+mongoose.connect("mongodb + srv://admin-shubham:Shubham123@cluster0.tlw48o2.mongodb.net/BlogDB");
 
 //creating schema of document
 const blogSchema = new mongoose.Schema({
@@ -85,7 +85,7 @@ app.get("/posts/:postName", function(req, res){
     })
 });
 
-let port = process.env.port || 3000;
+const port = process.env.PORT || 3000;
 app.listen(port, function() {
   console.log("Server started on port 3000");
 });
