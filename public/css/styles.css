@@ -1,11 +1,22 @@
 html {
   min-height: 100%;
   position: relative;
+  /* background-color: #ECF2FF; */
 }
-
+body{
+  background-color: white;
+  /* margin: 0;
+  padding: 0; */
+  max-width: 100%;
+}
 .container-fluid {
     padding-top: 70px;
     padding-bottom: 70px;
+}
+.color-nav{
+  /* font-size: 20px; */
+  /* color: #4A55A2; */
+  
 }
 .navbar {
     padding-top: 15px;
@@ -17,11 +28,14 @@ html {
     letter-spacing: 5px;
 }
 .navbar-nav  li a:hover {
-    color: #1abc9c !important;
+    color: white !important;
+}
+.navbar-header p:hover{
+  color: white !important;
 }
 
 .footer-padding {
-	padding-bottom: 60px;
+	padding-bottom: 15rem;
 }
 
 .footer {
@@ -30,11 +44,144 @@ html {
 	bottom: 0;
 	width: 100%;
 	height: 60px;
-	background-color: #1abc9c;
+	background-color: #7895CB;
 }
 
 .footer p {
 	margin-top: 25px;
 	font-size: 12px;
   color: #fff;
+}
+
+
+
+/* partials  */
+
+.header-bg-color{
+  margin: 0;
+  padding: 0;
+  background-color: #608de0;
+  color: white;
+}
+
+
+/* home */
+.title-all-blog{
+  padding-top: 3%;
+  display: flex;
+  justify-content: center;
+}
+.first-wave img{
+  width: 100px;
+}
+.second-wave img{
+  width: 100px;
+  rotate: 180deg;
+}
+
+
+.list-blog{
+  /* margin-left: 30px; */
+  margin: 3% 3% 3% 4% ;
+  max-width: 100%;
+  /* display: flex; */
+  justify-content: center;
+}
+.home-bio{
+  font-family: 'Inter', sans-serif;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+  margin: 3%;
+  padding: 2%;
+}
+.home-bio h2{
+  margin: 0;
+  font-size: 2.5rem;
+  /* margin-left: 2%; */
+}
+.home-bio p{
+  margin-top: 2%;
+}
+
+.card{
+  font-family: 'Inter', sans-serif;
+  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;  */
+  /*  */
+  /* box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px; */
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  margin: 1%;
+  width: 35rem;
+  height: 22rem;
+  margin-bottom: 15%;
+  /* background-color: #F5F5F5; */
+}
+.card-title{
+  padding: 5% 3% 1% 3%;
+  font-size: 2rem;
+  font-family: 'Inter', sans-serif; 
+}
+.card p{
+  padding: 3%;
+  font-family: 'Inter', sans-serif;
+}
+.card a {
+  padding: 3%;
+  font-family: 'Inter', sans-serif;
+}
+
+
+/* each post  */
+/* .bg-img img{
+  position: absolute;
+  width: 90%;
+  
+  margin-left: 0;
+  padding: 0;
+}
+*/
+.page{
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  width: 70rem;
+  justify-content: center;
+  margin: 5% auto auto auto;
+  position: relative;
+  padding: 1% 3% 3% 3%;
+  line-height: 2;
+  font-family: 'Roboto', sans-serif;
+} 
+ 
+.three-divs {
+  display: flex;
+  flex-direction: row;
+}
+.first-img{
+  float: left;
+}
+.first-img img{
+  /* width: 90%; */
+  height: 40rem;
+}
+.second-img{
+  float: right;
+  /* padding-bottom: -1rem; */
+  /* margin-top: 30%; */
+  padding-top: 40%;
+} 
+.second-img img{
+  height: 40rem;
+  /* margin-bottom: 1rem; */
+  /* padding-bottom: -1; */
+}
+
+
+
+/* media query */
+@media (max-width: 1000px){
+  /* body{
+    background-color: red;
+  } */
+
+  .list-blog{
+    margin: 5% 25% 5% 30%;
+  }
 }

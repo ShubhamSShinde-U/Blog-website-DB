@@ -1,17 +1,44 @@
 
 <%- include("partials/header"); -%>
-    <h2>Welcome to Shubham Shinde's Blog: Where Technology Meets Words</h2>
-    <p><%= startingContent %></p>
+    <div class="home-bio">
+      <h2>Welcome to Shubham's Blog: Where Technology Meets Words</h2>
+      <p>
+        <%= startingContent %>
+      </p>
+    </div>
+    
    <% console.log(allBlogs.length) %>
 
-   <% allBlogs.forEach(function(blog){%>
-    <h3><b><%= blog.title %></b></h3>
-    <p>
-      <%= blog.body.substring(0,100) +"..."%>
-      <a href="/posts/<%=blog._id%>">Read More</a>
-    </p>
-   <%})%>
+    <div class="title-all-blog">
+      <div class="first-wave">
+        <img src="../flower-wave.png" alt="" >
+      </div>
+      
+      <h1>All Blogs</h1>
 
+      <div class="second-wave">
+        <img src="../flower-wave.png" alt="" >
+      </div>
+      
+    </div>
 
+    <!-- <div class="list-blog"> -->
+      <div class="row list-blog">
+        <% allBlogs.forEach(function(blog){%>
+          <div class="col-lg-4 col-sm-12 col-md-6">
+            <div class="card">
+              <h3 class="card-title">
+                <%= blog.title %>
+              </h3>
+              <p>
+                <%= blog.body.substring(0,200) +"..."%>
+                  <br>
+              </p>
+              <a href="/posts/<%=blog._id%>">Read More</a>
+              </div>
+            </div>
+          <%})%>
+      </div>
+    <!-- </div> -->
 
 <%- include("partials/footer"); -%>
