@@ -249,4 +249,41 @@ body{
     width: 20rem;
     rotate: 180deg;
   }
+
+
+
+
+  /* each blog  */
+  .three-divs{
+    /* display: flexbox; */
+  }
+  .page{
+    /* font-size: 14px; */
+    margin: 4%;
+    width: 100%;
+    height: 100%;
+  }
+  .page h1{
+    font-size: 5rem;
+    font-weight: bold;
+  }
+  .page p{
+    font-size: 4rem;
+  }
+  .first-img{
+    width: 0;
+  }
+  .second-img{
+    width: 0;
+  }
+  .first-img img{
+    height: 0;
+    /* margin: 0;
+    padding: 0; */
+  }
+  .second-img img {
+    height: 0;
+    /* margin: 0;
+    padding: 0; */
+  }
 }
