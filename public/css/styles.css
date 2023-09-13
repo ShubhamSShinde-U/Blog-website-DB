@@ -177,6 +177,12 @@ body{
 
 /* media query */
 @media (max-width: 1000px){
+  .navbar-header{
+    font-size: 3rem;
+  }
+  .navbar-nav{
+    font-size: 2rem;
+  }
   /* All Blogs  */
   .list-blog{
     /* margin: 5% 25% 5% 30%; */
