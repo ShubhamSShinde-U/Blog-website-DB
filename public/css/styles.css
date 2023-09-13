@@ -177,11 +177,68 @@ body{
 
 /* media query */
 @media (max-width: 1000px){
-  /* body{
-    background-color: red;
-  } */
-
+  /* All Blogs  */
   .list-blog{
-    margin: 5% 25% 5% 30%;
+    /* margin: 5% 25% 5% 30%; */
+    margin: 0 5% 0 8%;
+  }
+  .card
+  {
+    margin: 0;
+    width: 80rem;
+    height: 40rem;
+  }
+  .card p{
+    font-size: 3rem;
+    padding: 4%;
+  }
+  .card a{
+    font-size: 3rem;
+  }
+  .card-title{
+    font-size: 4rem;
+  }
+
+
+
+  .home-bio{
+    height: 90rem;
+    text-align: center;
+    margin: 5%;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset; */
+    /* box-shadow: #608de0 0px 1px 2px 0px, #608de0 0px 1px 3px 1px; */
+    box-shadow: #849dcb 0px 30px 90px;
+    padding: 5%;
+  }
+  .home-bio h2{
+    font-size: 5rem;
+    padding-bottom: 5%;
+  }
+  .home-bio p{
+    text-align: center;
+    font-size: 3rem;
+    /* font-weight: 600; */
+    width: 80%;
+    margin: auto;
+  }
+
+
+  /* title-all-blog  */
+  .title-all-blog {
+    padding-top: 3%;
+    display: flex;
+    justify-content: center;
+  }
+  .title-all-blog h1{
+    font-size: 7rem;
+    padding: 0 3% 0 3%;
+  }
+  .first-wave img {
+    width: 20rem;
+  }
+
+  .second-wave img {
+    width: 20rem;
+    rotate: 180deg;
   }
 }
